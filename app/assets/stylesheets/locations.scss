@@ -1,6 +1,18 @@
 .location {
-  border: thin solid #000;
+  //   flex: 1;
+  flex-basis: calc(50% - 20px);
+  box-sizing: border-box;
+  border: thin solid #e0e0e0;
+  border-radius: 15px;
+  background-color: #0e0e0e;
   p {
     font-size: large;
+    text-align: center;
+    color: #e0e0e0;
   }
+}
+
+.location:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -1,22 +1,24 @@
-<div id="<%= dom_id location %>" class = "location">
-  <p>
-    <strong>Name:</strong>
-    <%= location.name %>
-  </p>
+<%= link_to location_path(location), class: "hidden-link" do %>
+  <div id="<%= dom_id location %>" >
+    <p>
+      <strong>Name:</strong>
+      <%= location.name %>
+    </p>
 
-  <p>
-    <strong>Place:</strong>
-    <%= location.place %>
-  </p>
+    <p>
+      <strong>Place:</strong>
+      <%= location.place %>
+    </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= location.description %>
-  </p>
+    <p>
+      <strong>Description:</strong>
+      <%= location.description %>
+    </p>
 
-  <p>
-    <strong>Visits:</strong>
-    <%= location.visits %>
-  </p>
+    <p>
+      <strong>Visits:</strong>
+      <%= location.visits %>
+    </p>
 
-</div>
+  </div>
+<%end %>

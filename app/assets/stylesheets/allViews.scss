@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  //   flex-wrap: wrap;
+}
+
+.columnSmall {
+  flex: 20%;
+  //   height: max-content;
+  padding: 0 10px;
+  a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 25px;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.columnLarge {
+  flex: 80%;
+  //   height: max-content;
+  padding: 0 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.hidden-link {
+  text-decoration: none;
+  color: white;
+}
+
+#locations {
+  display: flex;
+  flex-wrap: wrap;
+  //   justify-content: space-between; /* Optional: to space the items evenly */
+  gap: 20px; /* Gap between items */
+}

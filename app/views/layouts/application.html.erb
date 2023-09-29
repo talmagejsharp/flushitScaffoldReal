@@ -10,9 +10,15 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <%= link_to 'Locations', locations_path %>
-    <a href = "#"> Link</a>
+  <body class= "container">
+    <div class = "columnSmall">
+      <h2>Flushit</h2>
+      <%= link_to 'Home', "/" %>
+      </br>
+      <%= link_to 'Locations', locations_path %>
+    </div>
+    <div class = "columnLarge"> 
     <%= yield %>
+    </div>
   </body>
 </html>
