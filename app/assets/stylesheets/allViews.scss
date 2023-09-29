@@ -39,3 +39,26 @@ body {
   //   justify-content: space-between; /* Optional: to space the items evenly */
   gap: 20px; /* Gap between items */
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  :onhover {
+    color: whitesmoke;
+  }
+}
+.outlinedButton {
+  border: thin solid white;
+  background-color: #0e0e0e;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+.outlinedButton:onhover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button-container {
+  text-align: center;
+  margin-top: 30px; /* optional: to add some spacing at the top */
+}
